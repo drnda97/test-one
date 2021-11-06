@@ -1,0 +1,74 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+    text-align: left;
+    height: 100vh;
+    color: #2c3e50;
+}
+.active .gist_filename{
+    color: blue;
+}
+.active .gist_image{
+    opacity: .5; 
+}
+.gist-wrapper{
+    padding-bottom: 50px;
+}
+.gist-wrapper__title{
+    background: #E5E5E5;
+}
+.gist{
+    display: flex;
+    width: 95%;
+    margin: 15px auto;
+    border-bottom: 1px solid #EAEAEA;
+    cursor: pointer;
+}
+.image_wrapper{
+    width: 150px;
+    margin: 10px;
+    background-color: black;
+}
+.gist_image{
+    width: 100%;
+}
+.gist_filename{
+    align-self: center;
+}
+.loader-wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+.error-wrapper{
+    position: absolute;
+    top: 50%;
+    left: 35%;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    display: inline-block;
+    cursor: pointer;
+    margin: 0 10px;
+}
+.VuePagination {
+    position: fixed;
+    bottom: 0;
+    background: #fff;
+    width: 95%;
+    padding: 15px 50px;
+    text-align: right;
+}
+.VuePagination__count,
+a{
+    color: #4283b9;
+}
