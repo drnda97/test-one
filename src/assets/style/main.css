@@ -12,7 +12,7 @@
     color: #2c3e50;
 }
 .active .gist_filename{
-    color: blue;
+    color: #0000ff;
 }
 .active .gist_image{
     opacity: .5; 
@@ -22,6 +22,7 @@
 }
 .gist-wrapper__title{
     background: #E5E5E5;
+    padding: 0 3%;
 }
 .gist{
     display: flex;
@@ -30,10 +31,15 @@
     border-bottom: 1px solid #EAEAEA;
     cursor: pointer;
 }
+.gist:hover{
+    background-color: #DCE0DF;
+}
 .image_wrapper{
     width: 150px;
     margin: 10px;
-    background-color: black;
+}
+.dark-background{
+    background-color: #000;
 }
 .gist_image{
     width: 100%;
@@ -71,4 +77,10 @@ li {
 .VuePagination__count,
 a{
     color: #4283b9;
+}
+@media (max-width:1000px)  {
+    .VuePagination {
+        padding: 0;
+        text-align: center;
+    }
 }

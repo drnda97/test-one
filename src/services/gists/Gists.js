@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE_URL = 'https://api.github.com/gists/public'
+const BASE_URL = process.env.VUE_APP_EXP_BASE_URL;
 
 export default class GistsAdministration {
     static async getAllGists(pageNum) {

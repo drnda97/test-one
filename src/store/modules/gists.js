@@ -1,5 +1,5 @@
 import axios from "axios";
-
+const BASE_URL = process.env.VUE_APP_EXP_BASE_URL;
 const state = {
     gists: []
 };
@@ -8,7 +8,7 @@ const getters = {
 };
 const actions = {
     async getGists({commit}, pageNum) {
-        const response = await axios.get(`https://api.github.com/gists/public?page=${pageNum}`);
+        const response = await axios.get(`${BASE_URL}?page=${pageNum}`);
         commit('setGists', response.data)
     }
 };

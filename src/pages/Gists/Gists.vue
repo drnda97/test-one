@@ -3,10 +3,10 @@
         <div class="loader-wrapper" v-if="loading">
             <h1>Loading...</h1>
         </div>
-        <div class="error-wrapper" v-if="showErrorMessage">
+        <div class="error-wrapper" v-else-if="showErrorMessage">
             <h1>Something went wrong. Please try again later.</h1>
         </div>
-        <div class="gist-wrapper" v-if="gists.length">
+        <div class="gist-wrapper" v-else>
             <h1 class="gist-wrapper__title">Gists</h1>
             <list-item
                 v-for="gist in gists"

@@ -21,6 +21,7 @@ export default {
     methods: {
         changeRowStyle(e) {
             e.target.classList.toggle('active');
+            e.target.querySelector('.image_wrapper').classList.toggle('dark-background');
             this.showImage = true;
         }
     }
