@@ -5,8 +5,8 @@
 </template>
 
 <script>
-import Gists from './pages/Gists/Gists.vue'
-// import Gists from './pages/GistsVuex/GistsWithVuex.vue'
+// import Gists from './pages/Gists/Gists.vue'
+import Gists from './pages/GistsVuex/GistsWithVuex.vue'
 
 export default {
   name: 'App',
